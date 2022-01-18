@@ -7,7 +7,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 import tajbanana.ssfassessment.Book;
@@ -15,10 +14,8 @@ import tajbanana.ssfassessment.Book;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static tajbanana.ssfassessment.Constants.*;
 
@@ -71,12 +68,6 @@ public class BookService {
                 book.setBookKey(workId);
                 listOfBooks.add(book);
             }
-
-/*            for (int i = 0; i < listOfBooks.size(); i++ ) {
-                System.out.println(i);
-                System.out.println(listOfBooks.get(i).getBookKey());
-                System.out.println(listOfBooks.get(i).getBookTitle());
-            }*/
 
             return listOfBooks;
 

@@ -8,16 +8,11 @@ import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-import org.springframework.web.util.UriComponentsBuilder;
 import tajbanana.ssfassessment.Book;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
-import static tajbanana.ssfassessment.Constants.OPEN_LIBRARY_URL;
 import static tajbanana.ssfassessment.Constants.OPEN_LIBRARY_URL_WORKS;
 
 @Service
