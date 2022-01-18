@@ -8,11 +8,11 @@
     <h1>your book list</h1>
     <div class="book-list">
         <div th:each="book:${bookList}">
-            <a href="#" data-th-text="${book.bookTitle}"></a>
+            <a th:href="${'book/'+book.bookKey}" th:text="${book.bookTitle}"></a>
         </div>
-        
+
         <div>
-            <a href="http://localhost:8080">back</a>
+            <a href="/">back</a>
         </div>
     </div>
 </body>
